@@ -1,0 +1,40 @@
+// ----------- List of Entities and Properties ----------
+
+/*
+Entities:
+books
+authors
+genres
+customers
+editors
+publishers
+orders
+
+Properties:
+isbn, title, salesCount, pageCount, language, bookRoyalties
+authorId, firstName, lastName, authorLanguage, authorRoyalties
+genreId, genre
+customerId, firstName, lastName
+editorId, editorCompany
+publisherId, name, phoneNo, address
+orderId, dateOfOrder
+
+/*
+// ----------- list of Unique identifiers - Primary Keys ----------
+/*
+
+Unique Identifiers:
+isbn, authorId, genreId, customerId, editorId, publisherId, orderId
+
+/*
+// ----------- Table Relationships - Cardinality between Entities ----------
+/*
+
+Table Relationships:
+books, authors N:1
+books, genres 1:1
+books, editors N:1
+books, publishers N:1
+books, orders 1:N
+books, customers 1:N
+
